@@ -1,4 +1,4 @@
-# Appium docker setup
+# Appium docker container setup using docker
 1. Clone this repository
 2. `cd dockerappium`
 3. Run `docker build . i appium-test:latest`
@@ -11,3 +11,10 @@
 10. On your host machine spin up a virtual device or connect a real device with usb (**make sure the device has usb debugging enabled**)
 11. Run `adb -H host.docker.internal devices`
 12. You should see the list of devices connected to your host
+ # Appium setup using docker-compose
+ 1. Make sure you have [docker-compose!](https://docs.docker.com/compose/install/) installed.
+ 2. clone the repository and cd into the directory
+ 3. Run `docker-compose build` to build the project
+ 4. Run `docker-compose up -d` to run the container
+ 5. Run `docker exec -it <container_name> /bin/bash`
+ 6. This takes you inside the container you can then start running your test case commands to the emulators(*remember to use the -H host.docker.internal flat after adb whenever you are running adb commands in order to send commands to devices on the host*)
