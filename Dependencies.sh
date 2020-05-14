@@ -19,7 +19,7 @@ echo "###TESTIMNG NPM VERSION#####"
 npm --version
 
 echo "####INSTALL JAVA###"
-RUN apt-get -qqy update && \
+apt-get -qqy update && \
     apt-get -qqy --no-install-recommends install &&\
     apt-get install openjdk-11-jre openjdk-11-jdk &&\
     ca-certificates \
@@ -38,4 +38,4 @@ echo "###TESTING JAVA###"
 java -version
 echo "###INSTALL ANDROID STUDIO SDK PREREQUISITES###"
 sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386 -y
-
+echo "####done####"
