@@ -31,7 +31,7 @@
   "dependencies": {
     "@wdio/cli": "^6.0.14",
     "allure-commandline": "^2.9.0",
-    "appium": "^1.13.0",
+    "appium": "^1.17.1",
     "appium-controller": "^1.1.6",
     "assert": "^1.4.1",
     "babel-core": "^6.26.3",

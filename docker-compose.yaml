@@ -1,0 +1,9 @@
+version: '3'
+services:
+  appiumtest:
+    build: .
+    image: appiumtest:latest
+    ports:
+      - "5037:5037"
+      - "6080:6080"
+ 

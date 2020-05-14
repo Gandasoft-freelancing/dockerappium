@@ -1,0 +1,4 @@
+
+> pds_vega_ios_automation_test_framework@1.0.0 lint /Users/abrbose/PDS_Automated_UI_Test_Framework
+> eslint ./test
+

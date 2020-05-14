@@ -1,0 +1,16 @@
+[35m[Appium][39m Welcome to Appium v1.13.0
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m   sessionOverride: true
+[35m[Appium][39m   debugLogSpacing: true
+[35m[Appium][39m   defaultCommandTimeout: 7200
+[35m[Appium][39m   platformName: android
+[35m[Appium][39m Deprecated server args:
+[35m[Appium][39m   [31m--platform-name[39m => --default-capabilities '{"platformName":"android"}'
+[35m[Appium][39m Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[35m[Appium][39m   platformName: android
+[35m[HTTP][39m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+Fatal Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+    at Server.setupListenHandle [as _listen2] (net.js:1279:14)
+    at listenInCluster (net.js:1327:12)
+    at doListen (net.js:1460:7)
+    at process._tickCallback (internal/process/next_tick.js:63:19)

@@ -1,0 +1,35 @@
+[
+
+
+  {
+    "RunMode": false,
+    "Environment": "QA",
+    "deviceName": "moto",
+    "platformName": "Android",
+    "platformVersion": "7.1.1",
+    "app": "./apps/example_0.0.2.apk",
+    "noReset": true,
+    "autoGrantPermissions": true,
+    "udid": "ZH33B22T44",
+    "ExternalEmailAddress": "abcd@gmail.com",
+    "ExternalPassword": "Admins@123",
+    "Email": "pasalahaasith@gmail.com",
+    "Password": "Haas@9596",
+    "FirstName": "automationteam",
+    "Invalid_FirstName": "2@#",
+    "LastName": "qateam",
+    "Invalid_LastName": "23#",
+    "Month": "September",
+    "Day": 20,
+    "Year": 2005,
+    "Email_Address": "nnn@gmail.com",
+    "UserFirstName": "Adarsh",
+    "InvalidEmail": "xyz@xyz.com",
+    "safaribrowserbundleid": "com.apple.mobilesafari",
+    "HCPCode": "123456",
+    "settingsApp": "com.apple.Preferences",
+    "IncorrectHCPCode": "134560",
+    "appPackage": "com.android.chrome",
+    "appActivity": "com.google.android.apps.chrome.Main"
+  },
+]

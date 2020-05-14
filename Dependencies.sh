@@ -3,9 +3,9 @@ echo "####INSTALLING NODE####"
 apt-get update -y
 apt-get install curl -y
 curl -sL https://deb.nodesource.com/setup_12.x | bash && \
-    apt-get -qqy install nodejs && \
+    apt-get install g++ build-essential -y && \
+    apt-get -qqy install nodejs -y && \
     npm install -g appium --unsafe-perm=true --allow-root && \
-    exit 0 && \
     npm cache clean && \
     apt-get remove --purge -y npm && \
     apt-get autoremove --purge -y && \
@@ -14,14 +14,22 @@ curl -sL https://deb.nodesource.com/setup_12.x | bash && \
     apt-get -qqy gcc g++ make
 
 echo "####TESTING IF NODE IS INSTALLED###"
+
+rm -rf ~/.npm
+# In the project folder:
+rm -rf node_modules
+rm -f package-lock.json
+npm install npm@latest
 node --version
-echo "###TESTIMNG NPM VERSION#####"
+npm install
+npm install --save-dev cucumber
+echo "###TESTING NPM VERSION#####"
 npm --version
 
 echo "####INSTALL JAVA###"
 apt-get -qqy update && \
-    apt-get -qqy --no-install-recommends install &&\
-    apt-get install openjdk-11-jre openjdk-11-jdk &&\
+    apt-get -qqy --no-install-recommends install -y &&\
+    apt-get install openjdk-11-jre openjdk-11-jdk -y &&\
     ca-certificates \
     tzdata \
     zip \
@@ -36,6 +44,5 @@ apt-get -qqy update && \
   && rm -rf /var/lib/apt/lists/*
 echo "###TESTING JAVA###"
 java -version
-echo "###INSTALL ANDROID STUDIO SDK PREREQUISITES###"
-sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386 -y
+
 echo "####done####"
