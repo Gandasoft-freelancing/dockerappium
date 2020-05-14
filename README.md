@@ -17,4 +17,4 @@
  3. Run `docker-compose build` to build the project
  4. Run `docker-compose up -d` to run the container
  5. Run `docker exec -it <container_name> /bin/bash`
- 6. This takes you inside the container you can then start running your test case commands to the emulators(*remember to use the -H host.docker.internal flat after adb whenever you are running adb commands in order to send commands to devices on the host*)
+ 6. This takes you inside the container you can then start running your test case commands to the emulators(*remember to use the -H host.docker.internal flag after adb whenever you are running adb commands in order to send commands to devices on the host*)
