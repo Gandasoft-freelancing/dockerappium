@@ -4,6 +4,8 @@ services:
     build: .
     image: appiumtest:latest
     ports:
-      - "5037:5037"
+      - "5555:5555"
+      - "5554:5554"
       - "6080:6080"
+      - "4723:4723"
  

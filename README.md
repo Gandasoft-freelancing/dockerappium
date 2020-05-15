@@ -12,9 +12,10 @@
 11. Run `adb -H host.docker.internal devices`
 12. You should see the list of devices connected to your host
  # Appium setup using docker-compose
- 1. Make sure you have [docker-compose!](https://docs.docker.com/compose/install/) installed.
- 2. clone the repository and cd into the directory
+ 1. Make sure you have [docker-compose!](https://docs.docker.com/compose/install/) installed and make sure you have adb installed and running on your host otherwise the adb will give you some weird error about protocol*trust me you dont want that*
+ 2. clone the repository and cd into the directory 
  3. Run `docker-compose build` to build the project
  4. Run `docker-compose up -d` to run the container
- 5. Run `docker exec -it <container_name> /bin/bash`
- 6. This takes you inside the container you can then start running your test case commands to the emulators(*remember to use the -H host.docker.internal flag after adb whenever you are running adb commands in order to send commands to devices on the host*)
+ 5. Run `docker-compose ps` to get the service name
+ 6. Run `docker-compose exec -it <service_name> bash`
+ 7. This takes you inside the container you can then start running your test case commands to the emulators(*remember to use the -H host.docker.internal flag after adb whenever you are running adb commands in order to send commands to devices on the host*)
