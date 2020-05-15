@@ -15,4 +15,5 @@ EXPOSE 4723
 EXPOSE 5554
 EXPOSE 5555
 EXPOSE 6080
+RUN appium&
 CMD ["./install_apk.sh"]
