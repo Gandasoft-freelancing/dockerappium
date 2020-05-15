@@ -17,5 +17,5 @@
  3. Run `docker-compose build` to build the project
  4. Run `docker-compose up -d` to run the container
  5. Run `docker-compose ps` to get the container name
- 6. Run `docker exec -it <container> bash`
+ 6. Run `docker exec appiumtest bash` to run container terminal
  7. This takes you inside the container you can then start running your test case commands to the emulators(*remember to use the -H host.docker.internal flag after adb whenever you are running adb commands in order to send commands to devices on the host*)

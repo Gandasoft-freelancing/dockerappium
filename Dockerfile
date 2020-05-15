@@ -11,9 +11,9 @@ ENV JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin"  PATH=$PATH:$JAVA_HOME
 RUN echo "###installing apk on all connected devices###"
 
 RUN chmod a+x install_apk.sh  
+RUN ./install_apk.sh
 EXPOSE 4723
 EXPOSE 5554
 EXPOSE 5555
 EXPOSE 6080
-RUN appium&
-CMD ["./install_apk.sh"]
+
