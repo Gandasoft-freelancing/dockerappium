@@ -2,7 +2,8 @@
 echo "####INSTALLING NODE####"
 apt-get update -y
 apt-get install curl -y
-curl -sL https://deb.nodesource.com/setup_12.x | bash && \
+apt-get purge --auto-remove nodejs -y
+curl -sL https://deb.nodesource.com/setup_10.x | bash && \
     apt-get install g++ build-essential -y && \
     apt-get -qqy install nodejs -y && \
     npm install -g appium --unsafe-perm=true --allow-root && \
