@@ -9,3 +9,6 @@ services:
       - "6080:6080"
       - "4723:4723"
     command: bash -c "./install_apk.sh --user root && appium"
+    volumes:
+      - ./reports:/home/appium/reports
+
