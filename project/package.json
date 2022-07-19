@@ -91,7 +91,7 @@
     "phantomjs": "^2.1.7",
     "pixelmatch": "^4.0.2",
     "pngjs": "^3.4.0",
-    "properties-reader": "0.0.16",
+    "properties-reader": "2.2.0",
     "puppeteer": "^1.19.0",
     "puppeteer-core": "^1.19.0",
     "query-string": "^6.8.1",
